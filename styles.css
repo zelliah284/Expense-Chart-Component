@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: auto;
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(27, 66%, 92%);
+    width: 100%;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+   align-content: space-between;
+}
+.text p {
+    font-size: 15px;
+}
+.first-box {
+    background-color: hsl(10, 79%, 65%);
+    display: flex;
+    width: 35%;
+    height: 15%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 1em;
+}
+.main-box {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(33, 100%, 98%);
+    width: 35%;
+    height: 70%;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+h1 { 
+    font-size: 23px;
+    margin-right: 7em;
+    padding-top: 0.5em;
+}
+.spending-wrapper {
+    background-color: hsl(33, 100%, 98%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+.graph-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #myChart {
+    margin: 40px 0 25px 0;
+  }
+.underline {
+    padding: 0 1rem;
+    width: 90%;
+    align-self: center;
+    height: 2px;
+    background-color: hsl(27, 66%, 92%);
+    margin-top: 2rem;
+}
+footer {
+display: flex;
+flex-direction: row;
+margin-top: 2rem;
+justify-content: space-between;
+padding-bottom: 2em;
+}
+.total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1em;
+}
+
+.total p {
+    color: hsl(28, 10%, 53%);
+    font-size: 15px;
+}
+.end-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+}
+.end-section p {
+    font-size: 15px;
+    color: hsl(28, 10%, 53%);
+}
+.end-section b {
+    align-self: flex-end;
+}
+@media (max-width: 900px) {
+    body {
+        max-width: 600px;
+       font-size: 15px;
+       height: auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .first-box {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .first-box img {
+        width: 60px;
+    }
+    .main-box {
+        width: 90%;
+    }
+    h1 {
+        font-size: 20px;
+        margin: 0;
+    }
+    .end-section b {
+        align-self: flex-end;
+    }
+}

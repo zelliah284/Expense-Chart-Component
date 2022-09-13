@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+<script src="data.json"></script>
+<script src="main.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div id="chart-container">
+<div class="first-box">
+  <div class="text">
+  <p>My balance</p>
+  <span><b>$921.48</b></span>
+  </div>
+  <img src="images/logo.svg" alt="">
+</div>
+<div class="main-box">
+  <div class="spending-wrapper">
+    <h1>Spending - Last 7 days</h1>
+    <div class="graph-wrapper">
+      <canvas
+        id="myChart"
+        role="img"
+        aria-label="spending chart"
+        width="700px"
+      ></canvas>
+    </div>
+  
+
+  </div>
+<div class="underline"></div>
+
+<footer>
+  <div class="total">
+  <p>Total this month</p>
+  <h2><b>$478.33</b></h2>
+  </div>
+
+  <div class="end-section">
+  <b>+2.4%</b>
+  <p>from last month</p>
+  </div>
+
+  </footer>
+  </div>
+</div>
+</body>
+</html>
